@@ -1,0 +1,125 @@
+/*
+Theme Name: Firesites Unit
+Theme URI: http://www.firesites.co/
+Author: Firesites
+Author URI: http://www.firesites.co/
+Description: Firesites theme framework
+Version: 1.0
+License: GNU General Public License
+License URI: LICENSE.txt
+Tags: light, white, one-column, two-columns, left-sidebar, right-sidebar, flexible-width, custom-backgroud, custom-header, custom-menu, flexible-header, post-formats, threaded-comments, translation-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Arvo);
+
+.assistive-text{display:none;}
+.clear{clear:both;}
+
+body{background:#EFEFEF;}
+
+h1{margin-top:0;font-family:Arvo, 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+h2,h3,h4,h5,h6{font-family:Arvo, 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+
+img{max-width:100%;height:auto;}
+code{display:block;overflow-x:auto;}
+
+#site-header,#site-masthead,#site-breadcrumbs,#main,#site-links,#site-info{padding-top: 1.5em;padding-bottom: 1.5em;}
+
+#site-header{background:#135470;color:#fff;}
+#site-header a{color:#fff;}
+#site-header h3{font-size:1.5em;margin-top:0;margin-bottom:5px;}
+#site-header h4{font-size:1.2em;margin-top:0;margin-bottom:0px;}
+
+#site-top{text-align:right;} /* Justify menu text */
+
+#top-sidebar{margin-bottom:1em;text-align:right;}
+#search-container{width:250px;float:right;}
+
+#site-navigation > div ul{margin:0;padding:0;list-style:none;position:relative;z-index:20}
+#site-navigation > div > ul > li{display:inline;margin:0;padding:0;}
+#site-navigation > div > ul li{position:relative;}
+#site-navigation > div > ul li.page_item_has_children > a:after,
+#site-navigation > div > ul li.menu-item-has-children > a:after{content:"\e114";opacity:.5;font-family:'Glyphicons Halflings';position:relative;top:3px;left:5px;display:inline-block;-webkit-font-smoothing:antialiased;font-style:normal;font-weight:normal;line-height:1;-moz-osx-font-smoothing:grayscale;}
+#site-navigation > div > ul > li > a{line-height:36px;padding:10px 12px;}
+#site-navigation > div > ul > li:hover > a{background:#4A8BB5;}
+#site-navigation > div > ul > li a{text-decoration:none;}
+#site-navigation > div > ul > li ul{display:none;position:absolute;background:#4A8BB5;text-align:left;width:200px;padding:10px;top:26px;left:0;}
+#site-navigation > div > ul > li:hover > ul{display:block;}
+#site-navigation > div > ul > li ul li{width:210px;}
+#site-navigation > div > ul > li ul li a{display:block;padding:10px 10px;width:180px;}
+#site-navigation > div > ul ul ul{top:-10px;left:190px;}
+#site-navigation > div > ul ul li:hover ul{display:block;}
+#site-navigation > div > ul > li ul li:hover > a{background:rgba(255,255,255,.3);}
+#site-navigation > div > ul ul li.page_item_has_children > a:after,
+#site-navigation > div > ul ul li.menu-item-has-children > a:after{content:"\e080";top:2px;left:auto;right:0px;float:right;}
+
+#site-masthead{background:#fff;font-size:1.5em;}
+#site-masthead h1 b{color:#135470;}
+
+#site-breadcrumbs{background:#fff;}
+#site-breadcrumbs a.home{font-weight:bold;}
+
+#secondary,#tertiary{background:#fff;border:1px solid #ddd;padding:1em;margin-bottom:1em;box-shadow:0 2px 2px rgba(0,0,0,.1);}
+#secondary .widget,#tertiary .widget{position:relative;padding-top:58px;margin-bottom:2em;}
+#secondary .widget:last-child,#tertiary .widget:last-child{margin-bottom:0;}
+#secondary h3,#tertiary h3{margin:0;color:#fff;font-size:2em;background:#135470;padding:.5em;position:absolute;top:-.5em;left:-.5em;width:100%;width:calc(100% + 1em);text-align:center;}
+#secondary ul,#tertiary ul{margin:0;padding:0;list-style:none;}
+#secondary ul li,#tertiary ul li{margin:0;padding:0;}
+#secondary ul li a,#tertiary ul li a{display:block;padding:10px 10px;border-bottom:1px dashed #ccc;}
+#secondary ul li:last-child a,#tertiary ul li:last-child a{border-bottom:none;}
+
+#colophon{width:100%;}
+
+#site-links{background:#555;color:#fff;}
+#site-links a{color:#fff;}
+#site-links .widget{margin-bottom:1em;}
+#site-links .widget:last-child{margin-bottom:0;}
+#site-links ul{margin:0;padding:0;list-style:none;}
+#site-links ul li{margin:0;padding:0;}
+#site-links ul li a{display:block;padding:10px 10px;border-bottom:1px dashed #ccc;}
+#site-links ul li:last-child a{border-bottom:none;}
+
+#site-info{background:#333;color:#fff;text-align:center;}
+
+.type-post, .search-results .hentry{background:#fff;border:1px solid #ddd;padding:1em;margin-bottom:1em;box-shadow:0 2px 2px rgba(0,0,0,.1);}
+.type-post h2, .search-results .hentry h2{margin-top:0;}
+
+#nav-above:after,#nav-below:after{display:block;clear:both;content:'';margin-bottom:1em;}
+.nav-previous{float:left;}
+.nav-next{float:right;}
+
+/* +++ Page Builder / Bootstrap Compatability +++ */
+.panel-grid .panel{background:none;border:none;border-radius:0;box-shadow:none;-webkit-box-shadow:none;}
+
+@media (max-width: 992px) { 
+	.assistive-text{display:block;}
+	#site-header{text-align:center;}
+	#site-top{text-align:left;}
+	#top-sidebar{margin-top:2em;text-align:center;}
+	#site-navigation h3{background:rgba(0,0,0,.5);padding:.5em;margin:0;}
+	#site-navigation h3 span{float:right;}
+	
+	#site-navigation .menu{display:none;}
+	#site-navigation .menu > ul{background:rgba(0,0,0,.2);}
+	#site-navigation .menu > ul > li{display:block;}
+	#site-navigation .menu > ul li{border-bottom:1px solid rgba(0,0,0,.3);}
+	#site-navigation .menu > ul li:last-child{border-bottom:none;}
+	#site-navigation .menu > ul li.page_item_has_children > a:after{content:"\e114";top:4px;left:auto;right:10px;float:right;}
+	#site-navigation .menu > ul > li > a{display:block;padding:10px 12px;line-height:1.5;}
+	#site-navigation .menu > ul > li ul{display:block;position:static;text-align:left;width:auto;padding:10px;}
+	#site-navigation .menu > ul > li ul li{width:auto;}
+	#site-navigation .menu > ul > li ul li a{display:block;padding:10px 10px;width:auto;}
+	#site-navigation .menu > ul ul li.page_item_has_children > a:after{content:"\e114";top:4px;left:auto;right:10px;}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	#site-navigation .menu{display:block!important;}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}
