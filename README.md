@@ -1,7 +1,7 @@
 Firesites Unit
 ==============
 
-Firesites theme framework
+Firesites WordPress theme framework
 
 Copyright (C) 2014 Firesites
 
