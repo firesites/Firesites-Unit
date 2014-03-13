@@ -13,9 +13,12 @@ You should have received a copy of the GNU General Public License along with thi
 
 jeff@firesites.co
 
-Installation
-============
+## Installation
 
 1. Extract the zip file.
 2. Copy the firesites folder into your WordPress themes directory.
 3. Login to your WordPress site and activate this theme by going to Appearance->Themes and clicking the activate button for this theme.
+
+## Updates
+
+Updates are pushed regularly to GitHub. You can receive update notifications and setup automatic updates in WordPress by using [GitHub Updater](https://github.com/afragen/github-updater). The latest release of GitHub updater can be found [here](https://github.com/afragen/github-updater/releases).
