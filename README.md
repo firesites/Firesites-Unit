@@ -1,4 +1,4 @@
-Firesites-Unit
+Firesites Unit
 ==============
 
 Firesites theme framework
@@ -12,3 +12,10 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/.
 
 jeff@firesites.co
+
+Installation
+============
+
+1. Extract the zip file.
+2. Copy the firesites folder into your WordPress themes directory.
+3. Login to your WordPress site and activate this theme by going to Appearance->Themes and clicking the activate button for this theme.
