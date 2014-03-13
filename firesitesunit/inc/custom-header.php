@@ -35,8 +35,8 @@ function firesitesunit_custom_header_setup() {
     $args = array(
         'default-image'          => '',
         'default-text-color'     => 'fff',
-        'width'                  => 360,
-        'height'                 => 200,
+        'width'                  => 265,
+        'height'                 => 85,
         'flex-height'            => true,
         'wp-head-callback'       => 'firesitesunit_header_style',
         'admin-head-callback'    => 'firesitesunit_admin_header_style',
@@ -140,23 +140,28 @@ function firesitesunit_admin_header_style() {
     .appearance_page_custom-header #headimg { /* This is the container for the Custom Header preview. */
         background: #135470;
         border: none;
-        min-height: 0 !important
+        min-height: 0 !important;
+		padding:1.5em;
     }
-    #headimg h1 { /* This is the site title displayed in the preview */
-        font-size: 45px;
-        font-family: Georgia, 'Times New Roman', serif;
-        font-style: italic;
+    #headimg h3 { /* This is the site title displayed in the preview */
+        font-size: 24px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-weight: normal;
-        padding: 0.8em 0.5em 0;
+		margin:0;
     }
     #desc { /* This is the site description (tagline) displayed in the preview */
-        padding: 0 2em 2em;
+		font-size:14px;
+		margin:0;
     }
-    #headimg h1 a,
+    #headimg h3 a,
     #desc {
         color: #e9e0d1;
         text-decoration: none;
+		font-weight: normal;
     }
+	#headimg h3 a:hover{
+		text-decoration:underline;
+	}
     </style>
 <?php
 }
@@ -178,8 +183,8 @@ function firesitesunit_admin_header_image() { ?>
         else
             $style = ' style="color:#' . get_header_textcolor() . ';"';
         ?>
-        <h1><a id="name"<?php echo $style; ?> onclick="return false;" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-        <div id="desc"<?php echo $style; ?>><?php bloginfo( 'description' ); ?></div>
+        <h3><a id="name"<?php echo $style; ?> onclick="return false;" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h3>
+        <h4 id="desc"<?php echo $style; ?>><?php bloginfo( 'description' ); ?></h4>
         <?php $header_image = get_header_image();
         if ( ! empty( $header_image ) ) : ?>
             <img src="<?php echo esc_url( $header_image ); ?>" alt="" />

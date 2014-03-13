@@ -14,6 +14,6 @@
 				<?php get_search_form(); ?>
 			</div>
 		</div>
-		<div class="clear"></div>
+		<div class="clearfix"></div>
 	<?php endif; // end sidebar widget area ?>
 </div><!-- #tertiary .widget-area -->

@@ -15,7 +15,7 @@
  * @since Firesites Unit 1.0
  */
 function firesitesunit_posted_on() {
-    printf( __( 'Posted on <a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a><span class="byline"> by <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span></span>', 'firesitesunit' ),
+    printf( __( 'Posted on <a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s">%4$s</time></a><span class="byline"> by <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span></span>', 'firesitesunit' ),
         esc_url( get_permalink() ),
         esc_attr( get_the_time() ),
         esc_attr( get_the_date( 'c' ) ),
@@ -150,7 +150,7 @@ function firesitesunit_comment( $comment, $args, $depth ) {
                 <?php endif; ?>
  
                 <div class="comment-meta commentmetadata">
-                    <a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><time pubdate datetime="<?php comment_time( 'c' ); ?>">
+                    <a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><time datetime="<?php comment_time( 'c' ); ?>">
                     <?php
                         /* translators: 1: date, 2: time */
                         printf( __( '%1$s at %2$s', 'firesitesunit' ), get_comment_date(), get_comment_time() ); ?>

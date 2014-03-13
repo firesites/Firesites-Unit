@@ -22,7 +22,7 @@
 					<small>
 						Copyright &copy; <?php echo date( 'Y' ); ?>
 						<?php bloginfo( 'name' ); ?> -
-						<?php printf( 'Website designed by <a href="http://firesites.co/" target="_blank">Firesites</a>' ); ?>
+						<?php printf( 'WordPress theme by <a href="http://firesites.co/" target="_blank">Firesites</a>' ); ?>
 					</small>
 				</div>
 			</div>
