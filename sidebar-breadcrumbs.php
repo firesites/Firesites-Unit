@@ -7,7 +7,7 @@
 */
 ?>
 
-<?php if ( is_active_sidebar( 'sidebar-9' ) && !is_front_page() ) : ?>
+<?php if ( is_active_sidebar( 'sidebar-9' ) ) : ?>
 	<div id="site-breadcrumbs">
 		<div id="breadcrumbs-main" class="container">
 			<div class="row">
