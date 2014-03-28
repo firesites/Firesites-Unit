@@ -369,6 +369,8 @@ code {
 		float:right;
 	}
 	
+	/* Since 1.4
+	Use #site-navigation > div instead of #site-navigation > .menu for custom menu inclustion */
 	#site-navigation > div {
 		display:none;
 	}
